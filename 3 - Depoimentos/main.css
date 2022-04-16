@@ -39,7 +39,7 @@ body{
     /* box-sizing: border-box; */
     background-color: aliceblue;
     width: 650px;
-    height: 450px;   
+    /* height: 450px;    */
     display: flex;
     justify-content: center;
     flex-direction: column;
