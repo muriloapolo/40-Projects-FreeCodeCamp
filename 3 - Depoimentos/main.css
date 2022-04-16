@@ -1,12 +1,124 @@
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 
 }
 body{
     background-color: aqua;
+  
 }
-img{
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px ;
+     
+}
+.title h2{
+    font-size: 2.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
+    font-weight: bold; 
+}
+.underline{
+    width: 100px;
+    height: 5px;
+    background-color: blueviolet;
+    margin-bottom: 20px;
+}
+.review{
+    /* box-sizing: border-box; */
+    background-color: aliceblue;
+    width: 650px;
+    height: 450px;   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.337);
+    border-radius: 10px;
+}
+.img-container{
     width: 150px;
+    height: 150px;
     border-radius: 50%;
+    display: flex;    
+    overflow: hidden;
+    box-shadow: 7px -5px 1px rgb(134, 134, 245);   
+    position: relative;
+}
+
+img{
+    width: 100%;    
+}
+
+/* Formatação dos textos dentro do article */
+#author{
+    font-size: 1.2rem;    
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    height: 20px;
+    padding: 5px;
+}
+
+#job{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.500); 
+   
+}
+#info{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.600);    
+    height: 80px; 
+    text-indent: 25px;
+    margin-top: 20px;
+}
+.button-container{
+    height: 30px; 
+    margin-bottom: 5PX;
+}
+.prev-btn, .next-btn{
+    font-size: 1rem;
+    margin: 0px 10px 5px 0;
+    color: blue; 
+    padding: 5px;
+    border: 1px solid transparent;
+  
+
+}
+.prev-btn:hover, .next-btn:hover{  
+    transition: all 0.5s;
+    border: 1px solid rgb(133, 133, 218);
+    cursor: pointer;
+}
+
+.random-btn{
+   border: 1px solid rgba(0, 0, 255, 0.149);
+   padding: 5px;
+   font-size: 0.7em;    
+   text-transform: capitalize;
+   border-radius: 10px;
+   transition: all 0.5s;
+}
+.random-btn:hover{  
+ 
+    cursor: pointer;  
+    border: 1px solid rgb(88, 124, 220);
+    background-color: rgb(195, 207, 239);
+
 }

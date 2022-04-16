@@ -11,14 +11,14 @@ const reviews =[
         name: 'liam neeson',
         job: 'ux designer',
         img:'https://www.cegeplevis.ca/wp-content/uploads/2020/07/81991a28f5e1ede3be83d28d42dd27b0e8-04-liam-neeson.rsquare.w1200.jpg',
-        text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum quaerat unde quo saepe amet pariatur error dolorem, officiis hic, accusamus excepturi maxime minus sint.'
+        text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum quaerat unde.'
     },
     {
         id:3,
         name: 'demi moore',
         job: 'Q.A',
         img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Demi_Moore_2012.jpg/1200px-Demi_Moore_2012.jpg',
-        text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum quaerat unde quo saepe amet pariatur error dolorem, officiis hic, accusamus excepturi maxime minus sint.'
+        text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. '
     },
     {
         id:4,
@@ -32,7 +32,7 @@ const reviews =[
         name: 'robert d. junior',
         job: 'the boss',
         img:'http://cdn23.us1.fansshare.com/photos/robertdowneyjr/robert-downey-jr-room-hair-sitting-jacket-sofa-htc-539747532.jpg',
-        text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum quaerat unde quo saepe amet pariatur error dolorem, officiis hic, accusamus excepturi maxime minus sint.'
+        text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum quaerat unde quo saepe amet pariatur error dolorem.'
     }
 ];
 //   selecionar itens
@@ -89,6 +89,5 @@ prevBtn.addEventListener('click',function(){
 // surprise buttoon
 randomBtn.addEventListener('click',function(){
     currentItem = Math.floor(Math.random() * reviews.length);
-    console.log(currentItem)
     showPerson()
 })
